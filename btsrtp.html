@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body class="body-img">
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+    $(".hey").click(function(){
+       $(".heyo").slideToggle("slow");
+        });
+    });
+
+$(document).ready(function(){
+    $('.content').hover(function() {
+        $(".content").addClass('transition');
+    
+    }, function() {
+        $(".content").removeClass('transition');
+    });
+});
+
+$(document).ready(function(){
+    $('.content1').hover(function() {
+        $(".content1").addClass('transition');
+    
+    }, function() {
+        $(".content1").removeClass('transition');
+    });
+});
+
+$(document).ready(function(){
+    $('.content2').hover(function() {
+        $(".content2").addClass('transition');
+    
+    }, function() {
+        $(".content2").removeClass('transition');
+    });
+});
+
+$(document).ready(function(){
+    $('.content3').hover(function() {
+        $(".content3").addClass('transition');
+    
+    }, function() {
+        $(".content3").removeClass('transition');
+    });
+});
+
+
+</script>
+
+
+<style type="text/css">
+
+
+	
+	.container,.heyo {
+
+	padding: 5px;
+    text-align: center;
+    font-family: cursive;
+    color:white;
+	}
+
+	.body-img {
+    background: url("/Users/venkateshpulagam/Desktop/Crate and Barel/bg.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#DEB887; 
+}
+
+    .heyo{
+
+	
+	padding: 10px;
+    display: none;
+}
+
+.sun {
+	position: absolute;
+    left: 90px;
+    top: 60px;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 40s linear infinite;
+    -moz-animation:spin 40s linear infinite;
+    animation:spin 10s linear infinite;
+
+}
+
+.images_clicked {
+
+    width: 120px;
+    height: 120px;	
+    margin-left: 10px;
+}
+
+.transition {
+    -webkit-transform: scale(1.6); 
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+}
+.content {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+.content {
+    width:175px;
+    margin:50px;
+}
+.content1 {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+.content1 {
+    width:175px;
+    margin:50px;
+}
+.content2 {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+.content2 {
+    width:175px;
+    margin:50px;
+}
+.content3 {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+.content3 {
+    width:175px;
+    margin:50px;
+}
+
+#uniq{
+
+	border:2px solid #A9A9A9;
+	border-radius: 20px;
+	font-size:15px;
+	background-color:#A9A9A9;
+	font-family: Times, Times New Roman, serif;
+}
+
+#footer{
+
+	
+	font-family: Times, Times New Roman, serif;
+	font-size:25px;
+
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+</style>
+
+ <div class="container">
+	
+   <h1 class="hey" style="color:black; font-family: Helvetica,Arial,sans-serif"><strong>Crate&Barrel</strong></h1>
+   <div class="heyo">
+   	<img class="images_clicked img-rounded" src="/Users/venkateshpulagam/Desktop/Crate and Barel/download.jpeg">
+   	<img class="images_clicked img-circle" src="/Users/venkateshpulagam/Desktop/Crate and Barel/download3.jpeg">
+    <img class="images_clicked img-thumbnail" src="/Users/venkateshpulagam/Desktop/Crate and Barel/download2.jpeg">
+   	<img class="images_clicked img-circle" src="/Users/venkateshpulagam/Desktop/Crate and Barel/download1.jpeg">
+   	
+
+ </div>
+ <img class="sun" src="/Users/venkateshpulagam/Desktop/Crate and Barel/sun.png"> 
+
+ <nav class="navbar navbar-inverse" style="font-family:Neue Helvetica W05,Helvetica,Arial,sans-serif">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Crate&Barrel</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Furniture<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+          <li><a href="#">Living Room Collections</a></li>
+          <li><a href="#">Coffee&Accent Tables</a></li>
+          <li><a href="#">Tv Stands&Media Consoles</a></li>
+          <li><a href="#">Dining Room Collections</a></li>
+          <li><a href="#">Buffets & Sideboards</a></li>
+          <li><a href="#">Bar Cabinets & Bar Carts</a></li>
+
+        </ul>
+    </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Outdoor<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Metal</a></li>
+          <li><a href="#">Wood</a></li>
+          <li><a href="#">Resin Wicker</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Table&Laptop Bar<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+          <li><a href="#">Dinner Ware</a></li>
+          <li><a href="#">Dinner Bowls</a></li>
+          <li><a href="#">Individual Plates</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Kitchen<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+          <li><a href="#">Mixed Utensils</a></li>
+          <li><a href="#">Cooking Ware</a></li>
+          <li><a href="#">Cutting Boards</a></li>
+          <li><a href="#">Food Storage</a></li>
+          <li><a href="#">Cook Books</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid" id="uniq">
+	
+		<p>Crate & Barrel offers a variety of "upmarket" housewares, furniture, and related merchandise. These are displayed in the "vignette" style, where items are grouped together as they might appear in the home. The company was an innovator of this style, which has since become more widely used.Crate & Barrel has two sister brands. CB2 is a home furnishings division geared toward young adults[29] created in 2000.[30][31] The brand, open since 2000, now has 15 stores across the U.S. and Canada. An additional store is planned to open in Denver later this year.Crate and Barrel's kids brand The Land of Nod, acquired in 2001, plans to close all stores by the end of Spring 2018 and will become Crate&Kids, a kids furnishings, home goods and gifts product offering launching online and in 40 stores starting March 7.
+
+	</p>
+	
+		
+</div>
+
+
+<img class="content img-thumbnail" src="/Users/venkateshpulagam/Desktop/Crate and Barel/background.jpeg">
+<img class="content1 img-thumbnail"src="/Users/venkateshpulagam/Desktop/Crate and Barel/copper.jpeg">
+<img class="content2 img-thumbnail" src="/Users/venkateshpulagam/Desktop/Crate and Barel/bath.jpg">
+<img class="content3 img-thumbnail" src="/Users/venkateshpulagam/Desktop/Crate and Barel/kids.jpeg">
+
+<div id="footer">
+	<a style="color:white;margin: 50px;" href="#">Our Company</a>
+	<a style="color:white;margin: 50px;" href="#">Location</a>
+	<a style="color:white;margin: 50px;" href="#">Contact Us</a>
+	<a style="color:white;margin: 50px;" href="#">Shopping App</a>
+
+</div>
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
